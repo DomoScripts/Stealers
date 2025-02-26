@@ -10,7 +10,7 @@ Webhook = "https://discord.com/api/webhooks/1343781634826178680/EcOlekDjrd4h-6gk
 
 ----------------------------
 
-ScriptOwnerUsername = DomoUsername
+DomoUsername = ScriptOwnerUsername
 RobloxUsername = Username
 DiscordWebhook = Webhook
 
