@@ -65,7 +65,7 @@ repeat
 until game:IsLoaded()
 repeat 
     task.wait()
-until game.PlaceID ~= nil
+until game.PlaceId ~= nil
 repeat
     task.wait()
 until not game.Players.LocalPlayer.PlayerGui:FindFirstChild("__INTRO")
